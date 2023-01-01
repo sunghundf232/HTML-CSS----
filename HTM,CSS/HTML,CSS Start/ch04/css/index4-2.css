@@ -1,0 +1,8 @@
+p{
+    font-size: 32px;
+    font-weight: 110;
+    text-align: center;
+    text-decoration: line-through; /* 글 지우기 */
+}
+a{text-decoration: none;}
+

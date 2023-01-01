@@ -1,0 +1,14 @@
+body{font-size: 16px;} /* 부모요소 기준*/
+/*
+.div1{font-size: 100%;}
+.div2{font-size: 200%;}
+.div3{font-size: 200%;}
+/* pt --> px 보다 1.3배 커 따라서 워드 작업 할때 사용
+*/
+
+.div1{font-size: 1em;} 
+.div2{font-size: 2em;}
+.div3{font-size: 2em;}
+
+/* em => a * em  => ex) 1em = > 100%
+/* 150% => 1.5em

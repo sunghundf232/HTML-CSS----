@@ -1,0 +1,33 @@
+/*
+serif: Times New Roman
+sans-serif : Arial
+monospace : Courier
+cursive : Comic Sans Ms
+fantasy : Impact
+*/
+
+#serif{
+    font-family: "Times New Roman",serify;
+}
+
+#sans-serif{
+    font-family: Arial, sans-serif;
+}
+
+#monospace{
+    font-family: Courier,monospace;
+}
+
+#cursive{
+    font-family: "Comic Sans MS",cursive; /* 여러단어 일때 ""필수*/
+}
+#fantasy{
+    font-family: Impact,fantasy;
+}
+
+#gogle{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
