@@ -1,0 +1,11 @@
+h1{border: 5px solid red;}
+
+.p1{
+    border: 5px solid red;
+    /*max-width: 500px; 최대값이 500px 라 고정*/ 
+    min-height: 200px;
+}
+
+.p2{
+    border: 5px solid red;
+}

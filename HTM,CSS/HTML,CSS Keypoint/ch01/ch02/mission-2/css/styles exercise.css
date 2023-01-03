@@ -1,0 +1,35 @@
+/* 원본 CSS 코드 */
+
+h2 {
+  padding: 20px;
+}
+
+.box h2 {
+  font-size: 30px;
+  padding: 20px;
+  background: #FA987D;
+}
+
+.box h2 {
+  font-size: 30px;
+  padding: 20px;
+  background: #72CCA7;
+}
+
+.box h2 {
+  font-size: 30px;
+  padding: 20px;
+  background: #FA987D;
+}
+
+.box-four h2 {
+  font-size: 30px;
+  padding: 20px;
+  background: #72CCA7;
+}
+
+.boxh2 {
+  font-size: 30px;
+  padding: 20px;
+  background: #FA987D;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: gray;
+}
+.p1{
+    /*
+    width: 400px;
+    border: 5px solid green;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: transparent; /* 배경색 투명하게 할때 - 기본값
+    */
+    /*그림자 입히기*/
+    width: 400px; padding: 50px;
+    box-shadow: 
+    10px /* 가로 - 커질수록 오른쪽으로, - 면 반대로*/
+    -10px /* 세로 - 커질수록 밑으로 - 면 반대로*/
+    50px /* 그림자 희애지고 싶은 만큼 숫자 부여 */
+    10px /* 그림자 크기 설정 */
+    red
+    ;
+    
+}

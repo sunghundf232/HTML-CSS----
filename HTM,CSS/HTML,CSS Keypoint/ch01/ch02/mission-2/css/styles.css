@@ -1,0 +1,14 @@
+/* 원본 CSS 코드 */
+
+h2 {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.box-one h2{
+  background-color: #fa987d;
+}
+
+.box-two h2{
+  background-color: #72cca7;
+}

@@ -1,0 +1,29 @@
+h1{border: 5px solid red;}
+
+.p1{
+    border: 5px solid red;
+    /*max-width: 500px; 최대값이 500px 라 고정*/ 
+    max-height: 200px;
+    /* 6번라인처럼 최대 높이가 200px 이라 넘어가면 박스 범위에 벗어나서 나타난다.
+    따라서 해결방법은 ? */
+
+    /*1. 숨긴다
+    overflow: hidden;
+    */
+
+    /*2.scroll 활용하여 그 칸에 내용을 볼수 있게 한다.
+    overflow: scroll;
+    */
+
+    /*3. auto 활용*/
+    overflow: auto;
+    /* 내용이 많지 않아도 scroll 나와
+    */
+    
+    
+
+}
+
+.p2{
+    border: 5px solid red;
+}
