@@ -10,4 +10,14 @@
     (1)새로운 줄에 가려고 하는 성향
     (2)가로 길이를 최대한 많이 차지하려고 하는 성향
 
+3. inline- 가로 세로 길이 의미 없다 안에 있는 내용물에 따라 달라짐    
+
+4. inline 처럼 같은 줄에 머물면서 가로 세로 길이 같아지고 싶을때 : inline-block; 적용
+
+5. 이미지 가운데 정렬 - 이미지와 글이 한줄에같이 있는거 제외
+display : block; margin-left:auto; margin-right:auto
+
+6. inline , inline-block 특징 
+    (1)텍스트 처럼 다룰수 있어
+
 */    
