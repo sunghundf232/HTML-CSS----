@@ -1,0 +1,17 @@
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/*
+여기에 코드를 작성하세요
+*/
+.mongsoong{
+  position: relative;
+
+  bottom: 100px;
+  left: 200px;
+  
+}

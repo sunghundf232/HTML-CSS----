@@ -1,0 +1,25 @@
+div{
+    margin: 30px; padding: 30px;
+}
+
+.red{
+    border: 1px solid red;
+}
+
+.green{
+    border: 1px solid green;
+}
+.blue{
+    border: 1px solid blue;
+}
+b{
+    font-size: 28px; background-color: orange;
+    position: relative; /* 있어야할 위치에서 변경됨 다른것은 그대로 가만히 있음*/
+    top: 30px;
+    /*
+    margin-top: 30px;
+    margin-left: 50px;
+    */
+
+    /* 요소들이 겹치는 레이아웃을 만들려고 할때 posotion 속성 사용해*/
+}

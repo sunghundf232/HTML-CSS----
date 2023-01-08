@@ -1,0 +1,48 @@
+.env-div {
+  width: 500px;
+  height: 232px;
+  position: relative;
+}
+
+/*
+.address {
+  font-family: cursive;
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+
+/*
+여기에 코드를 작성하세요
+*/
+
+/*
+.stamp{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+*/
+
+.stamp{
+  position: absolute;
+  /*가까운 요소에 적용 if) 전 단계 적용 안될시 전전단계 한 계단식 백해서 올라감*/
+
+  /* 여기서 body에 영향을 받아 따라서 작업시 body 앞 단계
+
+  env-div에 posoition : relative 넣어 
+  그다음부터는 absolute 다시 넣던가 다른거 넣어
+  */
+
+  top: 30px;
+  right: 30px;
+
+
+}
+
+.address {
+  font-family: cursive;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}

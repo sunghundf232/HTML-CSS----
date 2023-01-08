@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+.col{
+   width: 200px;
+   float: left;
+}
+
+.col-1{
+    height: 200px;
+}
+
+.col-2{
+   width: 400px;
+}
+
+.col-3{
+    width: 600px;
+}
+

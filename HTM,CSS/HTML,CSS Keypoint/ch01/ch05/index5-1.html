@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            background-color: blue;
+            width: 300px;
+            float: left;
+        }
+        .yellow{
+            background-color: yellow;
+            /*
+            float 
+            1. 뜨면서 그 공간은 빈 상태이면 여기서 yellow 구간이 bule 의 남은 공간에 침투한다.
+            2. inline(ex 텍스트) , inline-block blue의 남은 공간에 침투 x
+            */
+        }
+        .orange{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>float</h1>
+    <div class="blue">blue</div>
+    <div class="yellow">yellow 안녕 나야 쫑이라고 해 나는 멋진 강아지야 내가 짱이란뜻이지</div>
+    <div class="orange">orange</div>
+</body>
+</html>
