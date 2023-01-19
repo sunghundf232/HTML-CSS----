@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--   
+    <form action="">
+        <label for="">이메일</label>
+        <input type="text">
+    </form>
+-->
+    <!--ex)이메일 클릭시 박스안에 글자 쓸수 있게-->
+
+    <form>
+        <label>이메일
+            <input>
+        </label>
+    </form>>
+
+    <br><br><br>
+
+    <!--id속성 이용해서 클릭시 박스안에 글자쓰게 커서 생기기-->
+
+    <form>
+        <div>
+            <label for="singup-eamil">이메일</label>
+            <input id="singup-eamil" name="email">
+        </div>
+        <div>
+            <label for="singup-password">비번</label>
+            <input id="singup-password" name="password" type="password"> <!--비번-->
+        </div>
+        <div>
+            <label for="singup-password check">비번check</label>
+            <input id="singup-password check" name="password check">
+        </div>
+        <button type="submit">확인</button>
+        <button type="reset">확인</button>
+    </form>
+
+    <!--한줄에 다 생기는데 안생기게 하려면 div 태그로 감쏴-->
+</body>
+
+</html>

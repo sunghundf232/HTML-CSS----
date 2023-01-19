@@ -1,0 +1,68 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.info{
+  width: 360px;
+  margin-top: 120px;
+  margin: auto auto;
+}
+
+.title{
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 36px; font-weight: 700;
+  color: #4e4e4e;
+}
+
+label {
+  display: block;
+  margin: 16px 0 8px;
+  font-size: 16px; font-weight: 400;
+  color: #2c2c2c;
+}
+
+input {
+  display: block;
+  padding: 16px 24px;
+  width: 100%;
+  line-height: 24px;
+  border: 1px solid #d1d1d1;
+  color: #ababab;
+}
+
+button {
+  border: none;
+  display: block;
+  padding: 16px;
+  margin-top: 24px; margin-bottom: 24px;
+  width: 100%;
+  font-size: 18px; font-weight: 700;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.pass{
+  text-align: right;
+  margin-top: 8px;
+}
+
+.pass1{
+  text-align: center;
+  color: #ababab;
+}
+
+.password1{
+  font-size: 14px; font-weight: 400;
+  color: #ababab;
+}
+
+
+
+
