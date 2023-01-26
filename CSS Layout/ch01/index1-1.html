@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>block - 위에서 아래로
+        1. ex) h1 , div , p
+    </h1>
+    <h2>inline - 글쓰는 방향
+        1. ex) a, span, img
+        2. 따로 크기가 없어서 크기를 주고 싶을때 inline-block 사용
+    </h2>
+    <h3>position - 글의 흐름과 상관없이 배치하고 싶을때 , 위치의 기준 , 구체적인 위치 : 너가 알고 있는거
+        1. static 
+            1) 포지션 속성값 지정 하지 않으면 나타나는 값
+            2) 원래 있어야 할 위치에 배치 - 일반적인  글 흐름을 따른다.
+            3) 이외 값 - 글의 흐름에 벗어나서 배치가능
+        2. releative - 원래의 기준에서 구체적인 위치 입력시 위치가 변경됨 , 월래 있던 공간은 비워놓고 배치
+
+        3. absolute - 가장 가까운 포지서닝 된 조상요소 기준 즉 기입한 구간 바로 전 구간 기준으로 만약에 포지셔닝이 안되어 있으면 가까운 곳에 포지셔닝 한데 기준으로
+        * 기존에 배치해서 벗어나서 배치됨 - 월래 배치에서 차지 하지 않고 빠져나온다.
+
+        - 위치에서 벗어날때 그때 텍스트를쓰면 텍스트 쓴만큼 넒이가 생겨
+        따라서 크기를 정해주지 않으면 내용만큼 크기를 가져
+
+        tip)영역 전체를 꽉차게 하고 싶을때 : 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        or) inset: 0; 숫자 만큼 모든 방향에서 숫자만큼 px됨
+        - 겹치고 싶을때 : 해당하는데 absolute 주고 상위에 releative 주면 됨
+
+        잘 겹쳐진 건지 확인하려면, 그라디언트(background-image: linear-gradient(....); ) 부분을 제거했다가 추가하면서 확인해 보세요!
+
+        4.fixed - 옮기는 기준 브라우저 화면
+         - 메뉴바 고정할때 사용
+         - 스크롤해도 고정되어 있기 때문에 내용이 보이지 않아
+          해결책)
+          1. 내용들을 div 태그로 감쏴
+          2. 마진 탑으로 메뉴바 높이 만큼 줘
+
+        5.sticky
+    </h3>
+</body>
+</html>
