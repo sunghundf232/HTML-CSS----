@@ -19,6 +19,7 @@
             1) 포지션 속성값 지정 하지 않으면 나타나는 값
             2) 원래 있어야 할 위치에 배치 - 일반적인  글 흐름을 따른다.
             3) 이외 값 - 글의 흐름에 벗어나서 배치가능
+
         2. releative - 원래의 기준에서 구체적인 위치 입력시 위치가 변경됨 , 월래 있던 공간은 비워놓고 배치
 
         3. absolute - 가장 가까운 포지서닝 된 조상요소 기준 즉 기입한 구간 바로 전 구간 기준으로 만약에 포지셔닝이 안되어 있으면 가까운 곳에 포지셔닝 한데 기준으로
@@ -27,25 +28,68 @@
         - 위치에서 벗어날때 그때 텍스트를쓰면 텍스트 쓴만큼 넒이가 생겨
         따라서 크기를 정해주지 않으면 내용만큼 크기를 가져
 
-        tip)영역 전체를 꽉차게 하고 싶을때 : 
+        tip) 크기 지정
+        position : absolute;
+        width:100% 
+        
+        or) right,left: 같은 값 부여
+
+        tip)크기를 지정할때 - 설정한 부분만 화면이 커져 (설정된 영역제외): 
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         or) inset: 0; 숫자 만큼 모든 방향에서 숫자만큼 px됨
+
+        여기서 width,height 값 있으면 안됨
+
         - 겹치고 싶을때 : 해당하는데 absolute 주고 상위에 releative 주면 됨
 
         잘 겹쳐진 건지 확인하려면, 그라디언트(background-image: linear-gradient(....); ) 부분을 제거했다가 추가하면서 확인해 보세요!
 
         4.fixed - 옮기는 기준 브라우저 화면
-         - 메뉴바 고정할때 사용
+         - 메뉴바 밑부분(네비게이션 바) 고정할때 사용
          - 스크롤해도 고정되어 있기 때문에 내용이 보이지 않아
           해결책)
           1. 내용들을 div 태그로 감쏴
           2. 마진 탑으로 메뉴바 높이 만큼 줘
+          만약 메뉴바 밑 네비게이션 바 높이가 있으면 width:100% 하고 그 전단계껄로 메뉴바 높이만큼 마진 탑 매겨
 
-        5.sticky
+        * tip) 요소를 꽉 채울때
+        position:fixed 
+        
+        width:100%
+
+        or) 좌우 위치 :0 (안되면 top:0 넣어)
+
+        5.sticky - 브라우저 화면 기준
+
+        1) 스크롤하다가 브라우저 상단에 네비게이션바다 다으면 달라부터어서 고정되는 값 만들기 : fixed 주고 top 값부여
+
+        2) 스클로하다가 내용에 닫는 순간에 fixed 으로 바뀌는 방법 : sticky 주고 top px 줘
+        ex) top :0 브라우저 기준으로 맨 위쪽에 다았을때 바뀐다는 의미
+
+        3) 부모 요소안에 소속되어 있다. 따라서 부모요소가 화면 밖으로 사라지면 같이 사라져
+        ex) 
+        <div>
+            <div class="blue">제목1</div>
+            <img class="skeleton" src="skeleton.png" alt="긴 글">
+          </div>
+          <div>
+            <div class="blue">제목2</div>
+            <img class="skeleton" src="skeleton.png" alt="긴 글">
+          </div>
+          <div>
+            <div class="blue">제목3</div>
+            <img class="skeleton" src="skeleton.png" alt="긴 글">
+          </div>
+          이런식으로 만들어 그전에 css(여기서 blue 처럼) 넣고
+
+          제목1에서 스크롤하다가 제목2를 만나면 제목1이 없어져
+
+          만약 fixed 값에서 sticky 값으로 변경하고 위로 스크롤할때 여백이 생기면 top(마진 ,패딩값 포함) 0으로 바꿔
+          맨위로 스크롤하다가 여백이 발생하면 top(마진 패딩 포함) 값 지워
     </h3>
 </body>
 </html>

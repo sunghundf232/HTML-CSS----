@@ -1,0 +1,32 @@
+body {
+  background-color: #f9fafc;
+  margin: 0;
+}
+
+main {
+  margin: 60px;
+}
+
+.red {
+  background-color: #e46e80;
+  width: 100%;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1; /* 숫자가 높을수록(0,1,2,3 -도 붙을수 있어 앞에 보이는 순서 밑에 있는 코드와 숫자 같으면 뒤쪽에 있는 코드가 먼저 나와 따라서 밑에 있는 코드일수록 앞쪽으로 나와 */
+}
+
+.blue {
+  background-color: #5195ee;
+  width: 100px;
+  height: 100px;
+  position: sticky;
+  top: 60px;
+  z-index: 1;
+}
+
+.skeleton {
+  width: 100%;
+  margin: 48px 0;
+}

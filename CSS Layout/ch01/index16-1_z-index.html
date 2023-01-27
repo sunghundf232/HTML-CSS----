@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            background-color: #e46e80;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+
+        .green {
+            background-color: #32b9c1;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 25px;
+            left: 25px;
+            z-index: 3;
+        }
+
+        .blue {
+            background-color: #5195ee;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 150px;
+            left: 150px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="red">
+        <div class="green"></div>
+    </div>
+    <div class="blue"></div>
+    <!--
+             red 자식 green이 하나로 묶에 있으면 z-index 아무리 써도 꼬일수가 있따.
+    -->
+
+
+
+</body>
+
+</html>

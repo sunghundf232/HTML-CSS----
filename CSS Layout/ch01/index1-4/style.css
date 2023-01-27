@@ -5,12 +5,19 @@ body {
 
 .red {
   background-color: #e46e80;
-  width: 100%;
+  width: 100%; /* 크기를 정하지 않을시 요소안에 있는 내용만큼 커져*/
   height: 120px;
+  /* 위치한곳에서 고정
+  position: fixed;
+  bottom: 100px;
+  right: 70px;
+  */
   position: fixed;
   top: 0;
   left: 0;
-  
+  right: 0;
+
+  /* or width:100%*/
 }
 
 .skeleton {

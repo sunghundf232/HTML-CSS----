@@ -1,41 +1,44 @@
 body {
-    background-color: #f9fafc;
-    margin: 60px;
-  }
-  
-  .red {
-    /*
-    background-color: #e46e80;
-    width: 500px;
-    height: 500px;
-    position: relative;
-    */
-    /* or*/inset: 0;
-  }
-  
-  .green {
-    background-color: #32b9c1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-   
-  }
-  
-  
-  .blue {
-    background-color: #5195ee;
-    /*
-    width: 100%; /*or : left,right 양쪽다 크기를 정해주면 크기를 지정가능*/
-    height: 100px;
-    position: absolute;
-    bottom: 40px;
-    right: 10px;
-  }
-  
-  .orange {
-    background-color: #f18575;
-    
-    height: 100px;
-  }
+  background-color: #f9fafc;
+  margin: 60px;
+}
+
+.red {
+  background-color: #e46e80;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.green {
+  background-color: #32b9c1;
+
+  /*
+  position: relative;
+  top: 40px; left: 90px;
+  */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* 또는 inset:0 하면 됨 */
+
+}
+
+
+.blue {
+  background-color: #5195ee;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+}
+
+.orange {
+  background-color: #f18575;
+  width: 100px;
+  height: 100px;
+}
