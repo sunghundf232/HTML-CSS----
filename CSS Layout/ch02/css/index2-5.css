@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f9fafc;
+    margin: 60px;
+  }
+
+  /* 굳이 마진을 활용하고 자 할때
+  .box:not(:last-child){
+    margin-right: 30px;
+  }
+  */
+  
+  .container {
+    border: 5px dashed #cacfd9;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 60px;
+    flex-direction: column;
+  }
+  
+  .box {
+    border-radius: 15px;
+    color: #f9fafc; 
+    padding: 30px;
+  }
+  
+  .red {
+    background-color: #e46e80;
+  }
+  
+  .green {
+    background-color: #32b9c1;
+    /*margin: 30px;*/
+
+    /* 요소랑 요소 사이에 간격 : margin 값 줘도 됨 하지만 썩 좋은건 아님 */
+  }
+  
+  .blue {
+    background-color: #5195ee;
+  }

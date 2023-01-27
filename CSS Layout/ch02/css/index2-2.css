@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f9fafc;
+    margin: 60px;
+  }
+  
+  .container {
+    border: 5px dashed #cacfd9;
+    width: 500px;
+    height: 500px;
+    display: flex; /* 왼쪽에서 오른쪽으로 배치*/
+    flex-direction: column; /* 위에서 아래로 배치*/
+    /* flex-direction: row : 왼쪽에서 오른쪽(기본)*/
+    /*--- - reverse : 반대방향으로 배치*/
+  }
+  
+  .box {
+    border-radius: 15px;
+    color: #f9fafc; 
+    padding: 30px;
+  }
+  
+  .red {
+    background-color: #e46e80;
+  }
+  
+  .green {
+    background-color: #32b9c1;
+  }
+  
+  .blue {
+    background-color: #5195ee;
+  }
+  

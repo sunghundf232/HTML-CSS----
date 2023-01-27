@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+</head>
+<body>
+    <h1>
+        1. 배치할 방향 : flex-direction 
+            
+        display: flex; /* 왼쪽에서 오른쪽으로 배치*/
+
+       1) 기본축의 수직방향(교차축) : flex-direction: column; /* 위에서 아래로 차례대로 꽉채워서 배치*/
+
+        (1) 정렬 : align-items : center 중앙정렬됨 (위에서 아래 방향의 중간에 배치) - 요소의 월래 크기로 변신함
+
+        - 태그 중 하나에 높이를 주면 높이를 받은 상태에서 중앙정렬됨
+
+
+        (2)용어 align-items : 방향키 말고 기타용어 
+        - flex-end : 아래 맨끝에  위치
+        - flex-start : 위꼭대기에 배치
+        - stretch : 교차축에 늘려서 배치
+
+
+       2) 기본축의 가로방향 /* flex-direction: row : 왼쪽에서 오른쪽(기본) 순서대로 배치*/
+
+        (1) 정렬 : justify-content : center 중앙정렬됨 꽉채워서 중앙에 배치
+        
+        (2) 용어 justify-content : 방향키 말고 기타용어
+        - flex-end : 기본측에 맨끝에 위치
+        - flex-start : 기본측에 맨 앞에 위치
+        - space-around : 공간을 나눠서 띄엄 배치 즉 양쪽에 같은 공간을 배치
+        - space-between : 양끝을 늘어뜨려 배치
+        - space-evenly : 빈공간의 크기가 모두 동일하게 배치 
+
+        - center , space-between 개 중요
+
+        /*--- - reverse : 반대방향으로 배치*/
+
+    3) 방향 배치 : flex-direction : a 
+         a : 
+          (1) align-items : stretch 일때  
+         - column : 위에서 아래로의 왼쪽에서 오른쪽으로 늘려서 배치
+
+         (1) align-items : center 일때  
+         - column : 위에서 아래로 방향으로 중앙정렬됨
+
+    4) 정리 할때 
+    display: flex 다음
+     justify-content : a , align-items : a 이런식으로 a를 기입해  
+     
+    만약
+     <div class="a">dfd
+        <div class="a-">dfdf</div>
+     </div>
+     있으면 a에게 방향 설정 먹여
+
+
+        2. 정렬 : justify-content , align-item 
+        3. 요소가 넘칠때 : flex-wrap 
+        4. 간격 : gap 
+
+          1) 여백(margin) 을 flex에서도 사용가능  
+          2) 마진을 사용하면 좋은건 아님
+          3) 굳이 마진을 활용하러면 선택자 활용
+           ex)  
+           .box:not(:last-child){
+            margin-right: 30px;
+          }
+
+          아니면 gap 사용 감싸고 있는 부모에 gap 머겨
+
+          ex) container에 gap 머겨 - 가로, 세로 방향 모두 적용
+
+          gap : a px(세로방향) , b px(가로방향)
+
+          <div class="container">
+            <div class="red box">RED</div>
+            <div class="green box">GREEN</div>
+            <div class="blue box">BLUE</div>
+          </div>
+
+        --> grid 속성이랑 같이 써 마진쓸때 순서랑 같애
+
+
+
+        5. 크기 정하기 : flex-grow , flex-shrink , flex-basis
+    </h1>
+</body>
+</html>
