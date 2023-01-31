@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px dashed #cacfd9;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+        }
+
+        .box {
+            border-radius: 15px;
+            color: #f9fafc;
+            padding: 10px;
+        }
+
+        .red {
+            background-color: #e46e80;
+        }
+
+        .green {
+            background-color: #32b9c1;
+            flex-grow: 1;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .blue {
+            background-color: #5195ee;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 플랙박스에서 벗어나는 경우 : absolute,fixed-->
+
+    <!--absolute 포지션은 포지셔닝된 가장 가까운 조상을 기준으로 배치되고, fixed는 브라우저 화면을 기준으로 배치된다고 배웠는데요. 이 둘의 공통점은 요소의 원래 자리를 차지하지 않는다는 겁니다. 즉, 글의 흐름에서 벗어나는 건데요. 마찬가지로 플렉스박스 안에서도 아예 벗어납니다. 그래서 이런 경우에는 마치 플렉스박스와 상관없는 요소처럼 배치됩니다.-->
+
+    <!--absolute 포지션부터 살펴보면 플렉스박스 안에서는 마치 .green <div>가 없는 것처럼 배치됐죠? 아예 흐름에서 벗어난 겁니다. 그리고 flex-grow: 1도 적용이 안 됐습니다. (만약 적용되었더라면 플렉스박스 너비만큼 꽉 채웠을 겁니다.)-->
+
+    <div class="container">
+        <div class="red box">RED</div>
+        <div class="green box">GREEN</div>
+        <div class="blue box">BLUE</div>
+    </div>
+
+</body>
+
+</html>

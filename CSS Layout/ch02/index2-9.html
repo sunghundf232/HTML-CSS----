@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px dashed #cacfd9;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+        }
+
+        .box {
+            border-radius: 15px;
+            color: #f9fafc;
+            padding: 10px;
+        }
+
+        .red {
+            background-color: #e46e80;
+        }
+
+        .green {
+            background-color: #32b9c1;
+            flex-grow: 1;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .blue {
+            background-color: #5195ee;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 플랙박스에 배치되는 경우 : relative , sticky-->
+    <!--relative 포지션은 요소의 원래 위치를 기준으로 배치하는 거라고 했습니다. 일단 플렉스박스 안에서 다른 요소들처럼 배치된 다음에 그 위치를 기준으로 배치됩니다. 즉, 원래 자리를 차지하고 있습니다.-->
+    <div class="container">
+        <div class="red box">RED</div>
+        <div class="green box">GREEN</div>
+        <div class="blue box">BLUE</div>
+    </div>
+
+</body>
+
+</html>
