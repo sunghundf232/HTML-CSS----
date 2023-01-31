@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<body>
+    1. 격자 나누기 : grid-template-rows(columnns)
+
+        속성 하나로 : (순서 : 세로(columns) --> 가로(row))
+        --> grid-template: row 값 / columns
+
+        두개로 나눠서 쓸라면 ? :
+
+        grid-template-columns
+        grid-template-rows    
+
+        ex) 너비 : 240 , 높이 : 240 3 * 3 그리드 완성해라
+
+        먼저 display : grid 넣고 
+
+        grid-template-columns: 240px 240px 240px;
+        grid-template-rows: 240px 240px 240px;
+
+        또는
+
+        grid-template : 240px 240px 240px / 240px 240px 240px
+
+        유연하게 배치 (ex 3등분 해서 각각 배치)
+
+    --> px 대신에 1fr 1fr 1fr 1비율로 배치
+    --> 중간에 1fr 대신 2fr 이면 중간에만 2배로 커져  
+
+    크기에서 최대 최소 값 정하기
+
+    -> minmax(최소값,최대값)
+
+    -> minmax 안에 fr 값 넣기 : 최대값만 가능
+
+
+    grid 배치 : 너비가 같은게 6개 나누기 ?
+
+    1fr 6번 쓰기 또는 repeat(원하는 숫자,1fr) 
+
+    (여기서 원하는 숫자) 반복할숫자 또는 나누고자 하는 열
+
+
+
+    2. 간격 : gap(flex랑 유사)
+
+    3. 크리 미리 정하기 : grid-auto-rows(columnns)
+
+        1) columns ,row 알아서 배치
+        ex) grid-template-columns : 값
+            grid-auto-rows: 값
+
+    4. 원하는 위치에, 여러 칸에 걸쳐서 배치 : grid-row(column),span
+
+    1) display:grid 먹이고 개발자 도구 들어가서 grid 선택하면 위치랑 번호 나와 그 번호에 맞게 넣어
+
+    grid-row(가로) : 값
+    grid-columns(세로) : 값
+
+    if) 여러줄 표시 : / 사용
+    ex) grid-row : 3/5 면 세로로 3~5번까지 차지함
+    if) 원하는 범위까지 차지 하려면? 값만큼 넓어진다.
+    / span 값 
+    
+
+    5. 이름으로 배치 : grid-area, grid-template-areas
+
+    1) grid-area :
+        ex) red : r , green : g , blue : b
+    
+    각 값마다 grid-area : 아무이름
+    그 해당하는 최고의 부모에
+
+    grid-template-areas:
+
+        "r g"
+        "r b"
+
+        r(red)이 한쪽면 다차지 하고 
+
+        if 반쪽만 차지하고 싶다면
+
+        ". g"
+        "r b"
+
+        나머지 한쪽은
+        g(green)
+        그 밑에 b(blue) 차지해 
+
+        1.세로로 갈수록 한칸식 즉 위에 있는 예제처럼 r 합쳐저
+        만약
+        . 밑에 r 면 r이 하나만 생겨
+        
+        2.왼쪽에서 오른쪽으로 갈수록 가로로 생겨
+
+
+</body>
+</html>
